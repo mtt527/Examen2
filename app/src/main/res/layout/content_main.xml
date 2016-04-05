@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mx.itesm.examen2.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titleLabel"
+        android:textSize="30sp"
+        android:text="Where I am?" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/latitudeLabel"
+        android:layout_below="@+id/titleLabel"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Latitude: " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/longitudeLabel"
+        android:layout_below="@+id/latitudeLabel"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Longitude: " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/altitudeLabel"
+        android:layout_below="@+id/longitudeLabel"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Altitude: " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/accuracyLabel"
+        android:layout_below="@+id/altitudeLabel"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Accuracy: " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/speedLabel"
+        android:layout_below="@+id/accuracyLabel"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Speed: " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/bearingLabel"
+        android:layout_below="@+id/speedLabel"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Bearing: " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/addressLabel"
+        android:layout_below="@+id/bearingLabel"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Address: " />
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Look on map"
+        android:onClick="getLocation"/>
+</RelativeLayout>
